@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Attributes</title>
+    </head>
+    <body>
+        <img src = "off.png" height = "200px" width = "200px">
+
+        <script>
+            var img = document.querySelector('img');
+            img.onClick = function()
+            {
+                var src = img.getAttribute("src");
+                if(src === "off.png")
+                    {
+                        img.setAttribute("src","on.png");
+                    }
+
+            }        
+        </script>
+    </body>
+</html>
